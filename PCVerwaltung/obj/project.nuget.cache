@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XukGX946HQE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bertalan\\OneDrive - Elektror\\02_Berufsschule\\BfK\\LF8\\PCVerwaltung_Vorlage\\PCVerwaltung_Vorlage\\PCVerwaltung\\PCVerwaltung.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bertalan\\.nuget\\packages\\materialdesigncolors\\5.2.1\\materialdesigncolors.5.2.1.nupkg.sha512",
+    "C:\\Users\\Bertalan\\.nuget\\packages\\materialdesignthemes\\5.2.1\\materialdesignthemes.5.2.1.nupkg.sha512",
+    "C:\\Users\\Bertalan\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}
