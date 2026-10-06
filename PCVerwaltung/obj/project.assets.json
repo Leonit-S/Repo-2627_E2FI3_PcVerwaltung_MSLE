@@ -154,11 +154,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bertalan\\OneDrive - Elektror\\02_Berufsschule\\BfK\\LF8\\PCVerwaltung_Vorlage\\PCVerwaltung_Vorlage\\PCVerwaltung\\PCVerwaltung.csproj",
+      "projectUniqueName": "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
       "projectName": "PCVerwaltung",
-      "projectPath": "C:\\Users\\Bertalan\\OneDrive - Elektror\\02_Berufsschule\\BfK\\LF8\\PCVerwaltung_Vorlage\\PCVerwaltung_Vorlage\\PCVerwaltung\\PCVerwaltung.csproj",
+      "projectPath": "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
       "packagesPath": "C:\\Users\\Bertalan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bertalan\\OneDrive - Elektror\\02_Berufsschule\\BfK\\LF8\\PCVerwaltung_Vorlage\\PCVerwaltung_Vorlage\\PCVerwaltung\\obj\\",
+      "outputPath": "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
