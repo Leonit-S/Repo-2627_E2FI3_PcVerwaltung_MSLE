@@ -8,5 +8,13 @@ namespace PCVerwaltung.Classes
 {
     class Ram
     {
+        public double Taktfrequenz { get; set; } = 0.0;
+        public string Modell { get; set; } = "";
+
+        public Ram(string modell, double taktfrequenz)
+        {
+            Modell = modell;
+            Taktfrequenz = taktfrequenz;
+        }
     }
 }
