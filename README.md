@@ -1,1 +1,1 @@
-Ziel für das Ende des Sprints: Alle MUSS-Stories erledigen und, wenn danach noch Zeit bleibt, zusätzliche KANN-Stories bearbeiten.
+Ziel für das Ende des Sprints: mindestens 1 Story fertig haben. 
