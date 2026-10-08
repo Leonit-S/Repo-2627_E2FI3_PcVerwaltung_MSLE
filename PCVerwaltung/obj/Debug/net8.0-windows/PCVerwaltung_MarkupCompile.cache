@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\
+C:\Users\Leonit.Sadiku\Source\Repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\
 PCVerwaltung
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\Leonit.Sadiku\Source\Repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\App.xaml
 8-1051524495
 
 21-562247838
-2011061007509
+2011389695473
 AllListsView.xaml;CpuView.xaml;GehaeuseView.xaml;InvoiceView.xaml;MainboardView.xaml;MainView.xaml;PcBuilderView.xaml;RamView.xaml;
 
 False

@@ -53,7 +53,7 @@ namespace PCVerwaltung {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PCVerwaltung;V1.0.0.0;component/mainboardview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PCVerwaltung;component/mainboardview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainboardView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
