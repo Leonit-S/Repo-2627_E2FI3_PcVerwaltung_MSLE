@@ -9,14 +9,20 @@ namespace PCVerwaltung.Classes
     public class Ram
     {
         public string Hersteller { get; set; }
-        public string Modell { get; set; }
         public int Kapazitaet { get; set; }
+        public int Taktfrequenz { get; set; }
+        public decimal Preis { get; set; }
 
-        public Ram(string hersteller, string modell, int kapazitaet)
+        public Ram(
+            string hersteller,
+            int kapazitaet,
+            int taktfrequenz,
+            decimal preis)
         {
             Hersteller = hersteller;
-            Modell = modell;
             Kapazitaet = kapazitaet;
+            Taktfrequenz = taktfrequenz;
+            Preis = preis;
         }
     }
 }

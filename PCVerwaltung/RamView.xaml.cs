@@ -1,18 +1,8 @@
 ﻿using PCVerwaltung.Classes;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PCVerwaltung
 {
@@ -25,6 +15,7 @@ namespace PCVerwaltung
         {
             InitializeComponent();
         }
+
         private void OnSaveClick(object sender, RoutedEventArgs e)
         {
             // Alte Fehler löschen
@@ -39,26 +30,12 @@ namespace PCVerwaltung
                 ok = false;
             }
 
-            // Modell überprüfen
-            if (string.IsNullOrWhiteSpace(txtModell.Text))
-            {
-                SetError(txtModell, "Bitte Modell angeben.");
-                ok = false;
-            }
-
             // Kapazität überprüfen
-            if (string.IsNullOrWhiteSpace(txtKapazitaet.Text))
-            {
-                SetError(txtKapazitaet, "Bitte Kapazität angeben.");
-                ok = false;
-            }
-
-            // Prüfen, ob Kapazität eine Zahl ist
-            int kapazitaet;
+            int kapazitaet = 0;
 
             if (!int.TryParse(txtKapazitaet.Text, out kapazitaet))
             {
-                SetError(txtKapazitaet, "Die Kapazität muss eine Zahl sein.");
+                SetError(txtKapazitaet, "Die Kapazität muss eine ganze Zahl sein.");
                 ok = false;
             }
             else if (kapazitaet <= 0)
@@ -67,23 +44,57 @@ namespace PCVerwaltung
                 ok = false;
             }
 
-            // Wenn Fehler vorhanden sind, abbrechen
+            // Taktfrequenz überprüfen
+            int taktfrequenz = 0;
+
+            if (!int.TryParse(txtTaktfrequenz.Text, out taktfrequenz))
+            {
+                SetError(txtTaktfrequenz, "Die Taktfrequenz muss eine ganze Zahl sein.");
+                ok = false;
+            }
+            else if (taktfrequenz <= 0)
+            {
+                SetError(txtTaktfrequenz, "Die Taktfrequenz muss größer als 0 sein.");
+                ok = false;
+            }
+
+            // Preis überprüfen
+            decimal preis = 0;
+
+            if (!decimal.TryParse(
+                txtPreis.Text,
+                System.Globalization.NumberStyles.Number,
+                System.Globalization.CultureInfo.CurrentCulture,
+                out preis))
+            {
+                SetError(txtPreis, "Bitte einen gültigen Preis eingeben.");
+                ok = false;
+            }
+            else if (preis < 0)
+            {
+                SetError(txtPreis, "Der Preis darf nicht negativ sein.");
+                ok = false;
+            }
+
+            // Bei Fehlern abbrechen
             if (!ok)
                 return;
 
             // RAM-Objekt erstellen
             var data = new Ram(
                 txtHersteller.Text.Trim(),
-                txtModell.Text.Trim(),
-                kapazitaet
+                kapazitaet,
+                taktfrequenz,
+                preis
             );
 
             // Anzeige
             MessageBox.Show(
-                $"Gespeichert:\n" +
+                $"Gespeichert:\n\n" +
                 $"Hersteller: {data.Hersteller}\n" +
-                $"Modell: {data.Modell}\n" +
-                $"Kapazität: {data.Kapazitaet} GB",
+                $"Kapazität: {data.Kapazitaet} GB\n" +
+                $"Taktfrequenz: {data.Taktfrequenz} MHz\n" +
+                $"Preis: {data.Preis:N2} €",
                 "RAM",
                 MessageBoxButton.OK,
                 MessageBoxImage.Information
@@ -101,8 +112,9 @@ namespace PCVerwaltung
         private void ResetFields()
         {
             txtHersteller.Text = "";
-            txtModell.Text = "";
             txtKapazitaet.Text = "";
+            txtTaktfrequenz.Text = "";
+            txtPreis.Text = "";
 
             ClearAllErrors();
         }
@@ -129,11 +141,11 @@ namespace PCVerwaltung
         private void ClearAllErrors()
         {
             ClearError(txtHersteller);
-            ClearError(txtModell);
             ClearError(txtKapazitaet);
+            ClearError(txtTaktfrequenz);
+            ClearError(txtPreis);
         }
 
         #endregion
     }
 }
-

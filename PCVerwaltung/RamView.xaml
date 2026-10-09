@@ -12,6 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -40,26 +41,8 @@
                      FontSize="16"/>
         </Grid>
 
-        <!-- Modell -->
-        <Grid Grid.Row="2" Margin="0,5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <TextBlock Grid.Column="0"
-                       Text="Modell:"
-                       VerticalAlignment="Center"
-                       FontSize="16"/>
-
-            <TextBox x:Name="txtModell"
-                     Grid.Column="1"
-                     Height="30"
-                     FontSize="16"/>
-        </Grid>
-
         <!-- Kapazität -->
-        <Grid Grid.Row="3" Margin="0,5">
+        <Grid Grid.Row="2" Margin="0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="*"/>
@@ -76,8 +59,44 @@
                      FontSize="16"/>
         </Grid>
 
+        <!-- Taktfrequenz -->
+        <Grid Grid.Row="3" Margin="0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Taktfrequenz (MHz):"
+                       VerticalAlignment="Center"
+                       FontSize="16"/>
+
+            <TextBox x:Name="txtTaktfrequenz"
+                     Grid.Column="1"
+                     Height="30"
+                     FontSize="16"/>
+        </Grid>
+
+        <!-- Preis -->
+        <Grid Grid.Row="4" Margin="0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       Text="Preis (€):"
+                       VerticalAlignment="Center"
+                       FontSize="16"/>
+
+            <TextBox x:Name="txtPreis"
+                     Grid.Column="1"
+                     Height="30"
+                     FontSize="16"/>
+        </Grid>
+
         <!-- Buttons -->
-        <StackPanel Grid.Row="4"
+        <StackPanel Grid.Row="5"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right"
                     Margin="0,20,0,0">

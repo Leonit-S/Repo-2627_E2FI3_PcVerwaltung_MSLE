@@ -41,12 +41,11 @@ namespace PCVerwaltung
         // RAM
         public static List<Ram> RAMs { get; } = new()
         {
-            new Ram("Corsair", "Vengeance 16GB DDR4", 100),
-            new Ram("Corsair", "Vengeance 32GB DDR4", 100),
-            new Ram("Kingston", "Fury Beast 16GB DDR4", 100),
-            new Ram("Kingston", "Fury Beast 32GB DDR5", 100),
-            new Ram("G.Skill", "Ripjaws V 16GB DDR4", 100),
-            new Ram("G.Skill", "Trident Z5 32GB DDR5", 100),
+        new Ram("Corsair",  16, 3200,  39.99m),
+        new Ram("Kingston",  8, 3200,  19.99m),
+        new Ram("G.Skill",  32, 3600,  74.99m),
+        new Ram("Crucial",  16, 3200,  34.99m),
+        new Ram("Corsair",  32, 5600, 109.99m)
         };
 
         // Bereits vorhandene PCs
