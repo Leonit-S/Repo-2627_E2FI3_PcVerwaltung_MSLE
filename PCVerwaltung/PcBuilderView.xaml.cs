@@ -1,4 +1,4 @@
-﻿using PCVerwaltung.Classes;
+using PCVerwaltung.Classes;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -18,11 +18,11 @@ namespace PCVerwaltung
             var selCase = CmbCase.SelectedItem as Case;
             var selMb = CmbMainboard.SelectedItem as Mainboard;
             var selCpu = CmbCpu.SelectedItem as CPU;
-            var selRam = CmbCpu.SelectedItem as Ram;
+            var selRam = CmbRAM.SelectedItem as Ram;
 
-            if (selCase is null || selMb is null || selCpu is null)
+            if (selCase is null || selMb is null || selCpu is null || selRam is null)
             {
-                MessageBox.Show("Bitte Gehäuse, Mainboard und CPU auswählen.",
+                MessageBox.Show("Bitte Gehäuse, Mainboard, CPU und RAM auswählen.",
                                 "Auswahl unvollständig",
                                 MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
@@ -58,7 +58,7 @@ namespace PCVerwaltung
             }
 
             // Speichern
-            var pc = new PC(selCase, selCpu, selMb);
+            var pc = new PC(selCase, selCpu, selMb, selRam);
             App.PCs.Add(pc);
 
             //Damit die PC-Liste aktualisiert wird.

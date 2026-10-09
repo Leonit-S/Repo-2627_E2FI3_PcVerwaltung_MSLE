@@ -51,11 +51,11 @@ namespace PCVerwaltung
         // Bereits vorhandene PCs
         public static List<PC> PCs { get; } = new()
         {
-            new PC(Cases[0], CPUs[0], Mainboards[0]),
-            new PC(Cases[1], CPUs[1], Mainboards[1]),
-            new PC(Cases[2], CPUs[2], Mainboards[2]),
-            new PC(Cases[3], CPUs[3], Mainboards[4]),
-            new PC(Cases[4], CPUs[4], Mainboards[3]),
+            new PC(Cases[0], CPUs[0], Mainboards[0], RAMs[0]),
+            new PC(Cases[1], CPUs[1], Mainboards[1], RAMs[1]),
+            new PC(Cases[2], CPUs[2], Mainboards[2], RAMs[2]),
+            new PC(Cases[3], CPUs[3], Mainboards[4], RAMs[3]),
+            new PC(Cases[4], CPUs[4], Mainboards[3], RAMs[4]),
         };
     }
 }

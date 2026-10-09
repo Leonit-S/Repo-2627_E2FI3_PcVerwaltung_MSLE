@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="PCVerwaltung.PcBuilderView"
+<UserControl x:Class="PCVerwaltung.PcBuilderView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
@@ -146,15 +146,16 @@
                       EnableRowVirtualization="True" Margin="0,4,0,0">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="CPU"        Binding="{Binding Cpu.Modell}"       Width="2*"/>
-                        <DataGridTextColumn Header="Takt (GHz)" Width="*"
+                        <DataGridTextColumn Header="Takt (GHz)" Width="Auto" MinWidth="85"
                         ElementStyle="{StaticResource RightAlignStyle}">
                             <DataGridTextColumn.Binding>
                                 <Binding Path="Cpu.Taktfrequenz" StringFormat="0.##"/>
                             </DataGridTextColumn.Binding>
                         </DataGridTextColumn>
+                        <DataGridTextColumn Header="RAM"        Binding="{Binding Ram.DisplayName}"  Width="2*"/>
                         <DataGridTextColumn Header="Mainboard"  Binding="{Binding Mainboard.Modell}" Width="2*"/>
-                        <DataGridTextColumn Header="Formfaktor" Binding="{Binding Mainboard.Formfaktor}" Width="*"/>
-                        <DataGridTextColumn Header="Sockel"     Binding="{Binding Mainboard.Sockel}" Width="*"/>
+                        <DataGridTextColumn Header="Formfaktor" Binding="{Binding Mainboard.Formfaktor}" Width="Auto" MinWidth="90"/>
+                        <DataGridTextColumn Header="Sockel"     Binding="{Binding Mainboard.Sockel}" Width="Auto" MinWidth="75"/>
                         <DataGridTextColumn Header="Gehäuse"    Binding="{Binding Case.Modell}"      Width="2*"/>
                     </DataGrid.Columns>
                 </DataGrid>
