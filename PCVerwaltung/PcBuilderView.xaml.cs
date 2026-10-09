@@ -18,6 +18,7 @@ namespace PCVerwaltung
             var selCase = CmbCase.SelectedItem as Case;
             var selMb = CmbMainboard.SelectedItem as Mainboard;
             var selCpu = CmbCpu.SelectedItem as CPU;
+            var selRam = CmbCpu.SelectedItem as Ram;
 
             if (selCase is null || selMb is null || selCpu is null)
             {

@@ -76,7 +76,7 @@ namespace PCVerwaltung {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PCVerwaltung;component/cpuview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PCVerwaltung;V1.0.0.0;component/cpuview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CpuView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
