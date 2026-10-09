@@ -13,8 +13,17 @@ namespace PCVerwaltung.Classes
         public int Taktfrequenz { get; set; }
         public decimal Preis { get; set; }
 
-        public string Modell => $"{Kapazitaet}GB ({Taktfrequenz} MHz)";
-        public string DisplayName => $"{Hersteller} {Modell}";
+        public string Modell
+        {
+            get => $"{Kapazitaet}GB ({Taktfrequenz} MHz)";
+            set { }
+        }
+
+        public string DisplayName
+        {
+            get => $"{Hersteller} {Modell}";
+            set { }
+        }
 
         public override string ToString() => DisplayName;
 
