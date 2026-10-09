@@ -76,7 +76,7 @@ namespace PCVerwaltung {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PCVerwaltung;component/gehaeuseview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PCVerwaltung;V1.0.0.0;component/gehaeuseview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\GehaeuseView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

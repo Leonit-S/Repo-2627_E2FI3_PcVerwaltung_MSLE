@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj": {}
+    "C:\\Users\\seymen.yilmaz\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj": {
+    "C:\\Users\\seymen.yilmaz\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
+        "projectUniqueName": "C:\\Users\\seymen.yilmaz\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
         "projectName": "PCVerwaltung",
-        "projectPath": "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
-        "packagesPath": "C:\\Users\\Bertalan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bertalan\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\obj\\",
+        "projectPath": "C:\\Users\\seymen.yilmaz\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
+        "packagesPath": "C:\\Users\\seymen.yilmaz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\seymen.yilmaz\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bertalan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\seymen.yilmaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,12 +26,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-windows": {
-            "framework": "net8.0-windows7.0",
+          "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
@@ -45,12 +43,10 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.300"
+        }
       },
       "frameworks": {
-        "net8.0-windows": {
-          "framework": "net8.0-windows7.0",
+        "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
             "MaterialDesignThemes": {
@@ -77,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
