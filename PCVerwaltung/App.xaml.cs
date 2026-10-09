@@ -1,4 +1,4 @@
-﻿using PCVerwaltung.Classes;
+using PCVerwaltung.Classes;
 using System.Windows;
 
 namespace PCVerwaltung
@@ -41,12 +41,12 @@ namespace PCVerwaltung
         // RAM
         public static List<Ram> RAMs { get; } = new()
         {
-            new Ram("Corsair", "Vengeance 16GB DDR4"),
-            new Ram("Corsair", "Vengeance 32GB DDR4"),
-            new Ram("Kingston", "Fury Beast 16GB DDR4"),
-            new Ram("Kingston", "Fury Beast 32GB DDR5"),
-            new Ram("G.Skill", "Ripjaws V 16GB DDR4"),
-            new Ram("G.Skill", "Trident Z5 32GB DDR5"),
+            new Ram("Corsair", "Vengeance 16GB DDR4", 100),
+            new Ram("Corsair", "Vengeance 32GB DDR4", 100),
+            new Ram("Kingston", "Fury Beast 16GB DDR4", 100),
+            new Ram("Kingston", "Fury Beast 32GB DDR5", 100),
+            new Ram("G.Skill", "Ripjaws V 16GB DDR4", 100),
+            new Ram("G.Skill", "Trident Z5 32GB DDR5", 100),
         };
 
         // Bereits vorhandene PCs

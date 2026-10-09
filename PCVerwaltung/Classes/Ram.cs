@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PCVerwaltung.Classes
 {
-    class Ram
+    public class Ram
     {
         public string Hersteller { get; set; }
         public string Modell { get; set; }

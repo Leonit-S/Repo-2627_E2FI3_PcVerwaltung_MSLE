@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yY97fDsPzBEbGbSiYRGryO62E1lxd0I6i55ZcKv2GNLIV4NgbaaHUlWrmJRfZyA4Pull3h+HkrniDNXmd98wwQ==",
+  "dgSpecHash": "g/R4BhgzDK4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\seymen.yilmaz\\Source\\Repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
+  "projectFilePath": "C:\\Users\\seymen.yilmaz\\source\\repos\\Leonit-S\\Repo-2627_E2FI3_PcVerwaltung_MSLE\\PCVerwaltung\\PCVerwaltung.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seymen.yilmaz\\.nuget\\packages\\materialdesigncolors\\5.2.1\\materialdesigncolors.5.2.1.nupkg.sha512",
     "C:\\Users\\seymen.yilmaz\\.nuget\\packages\\materialdesignthemes\\5.2.1\\materialdesignthemes.5.2.1.nupkg.sha512",
