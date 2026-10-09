@@ -27,7 +27,7 @@
         <TextBox x:Name="txtModell" Grid.Row="1" Grid.Column="1" Margin="0,4"/>
 
         <!-- Formfaktor -->
-        <TextBlock Grid.Row="2" Text="Formfaktor:" VerticalAlignment="Center" Margin="0,6"/>
+        <TextBlock Grid.Row="2" Text="Sockel:" VerticalAlignment="Center" Margin="0,6"/>
         <ComboBox x:Name="cmbFormfaktor" Grid.Row="2" Grid.Column="1" Margin="0,4" SelectedIndex="0">
         </ComboBox>
 

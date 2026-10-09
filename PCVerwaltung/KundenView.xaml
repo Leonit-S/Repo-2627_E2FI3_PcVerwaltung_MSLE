@@ -3,26 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" Width="704" Height="406">
+             mc:Ignorable="d" Width="716" Height="436">
     <Grid x:Name="KundenGrid" Width="592" Height="369" Margin="56,0,56,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid>
+        <Grid Margin="3,-10,-3,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+
+            <TextBlock HorizontalAlignment="Left" Margin="-64,-32,0,0" TextWrapping="Wrap" Text="Kunde - Einpflegen"  FontSize="20" Foreground="#673ab7" FontWeight="Bold" VerticalAlignment="Top"></TextBlock>
 
             <StackPanel Margin="0,0,12,0">
                 <TextBlock Text="Vorname" Margin="0,4"/>
                 <TextBox x:Name="txtVorname" />
                 <TextBlock Text="Nachname" Margin="0,8,0,4"/>
                 <TextBox x:Name="txtNachname" />
-                <TextBlock Text="Firma" Margin="0,8,0,4"/>
-                <TextBox x:Name="txtFirma" />
                 <TextBlock Text="Telefon" Margin="0,8,0,4"/>
                 <TextBox x:Name="txtTelefon" />
                 <TextBlock Text="E-Mail" Margin="0,8,0,4"/>
@@ -40,13 +40,13 @@
                 <TextBox x:Name="txtOrt" />
 
             </StackPanel>
-            <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,210,10,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,230,-46,-20" Grid.Column="1">
                 <Button Margin="10" Content="Speichern" Width="100" Click="OnSaveClick"/>
                 <Button Content="Abbrechen" Width="100" Click="OnCancelClick"/>
             </StackPanel>
         </Grid>
 
-        <DataGrid Grid.Row="1" x:Name="dgCustomers" ItemsSource="{Binding Customers}" Margin="-41,12,-37,-165"
+        <DataGrid Grid.Row="1" x:Name="dgCustomers" ItemsSource="{Binding Customers}" Margin="-41,12,-65,-69"
                   AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}" Width="*"/>

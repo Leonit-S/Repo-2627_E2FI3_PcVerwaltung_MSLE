@@ -4,12 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         
-             mc:Ignorable="d" Height="248" Width="420" >
+             mc:Ignorable="d" >
 
-    <Grid Margin="12" MaxWidth="520">
+    <Grid Margin="18,10,12,12" MaxWidth="520">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" MinHeight="39"/>
-            <RowDefinition Height="24"/>
+            <RowDefinition Height="Auto" MinHeight="45"/>
+            <RowDefinition Height="18"/>
             <RowDefinition Height="39"/>
             <RowDefinition Height="Auto" MinHeight="34"/>
             <RowDefinition/>
@@ -21,33 +21,33 @@
 
         <!-- ID -->
 
-        <TextBlock Text="ID:" VerticalAlignment="Center" Height="15"/>
-        <TextBox x:Name="texId" Grid.Column="1" Margin="0,4,0,10"/>
+        <TextBlock Text="ID:" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Margin="3,-3,233,0"/>
+        <TextBox x:Name="texId" Grid.Column="1" Margin="3,-11,-3,25"/>
 
         <!-- Hersteller -->
-        <TextBlock Text="Hersteller:" VerticalAlignment="Center" Height="18" Grid.Row="1"/>
-        <TextBox x:Name="txtHersteller" Grid.Column="1" Margin="0,28,0,0" Grid.RowSpan="2"/>
+        <TextBlock Text="Hersteller:" VerticalAlignment="Top" Height="18" Grid.ColumnSpan="2" Margin="3,27,233,0"/>
+        <TextBox x:Name="txtHersteller" Grid.Column="1" Margin="3,13,-3,15" Grid.RowSpan="2"/>
 
         <!-- Modell -->
-        <TextBlock Grid.Row="2" Text="Modell:" VerticalAlignment="Center" Height="16"/>
-        <TextBox x:Name="txtModell" Grid.Row="2" Grid.Column="1" Margin="0,0,0,4"/>
+        <TextBlock Grid.Row="2" Text="Modell:" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Margin="3,4,233,0"/>
+        <TextBox x:Name="txtModell" Grid.Row="1" Grid.Column="1" Margin="3,9,-3,19" Grid.RowSpan="2"/>
 
         <!-- Formfaktor -->
-        <TextBlock Grid.Row="3" Text="Formfaktor:" VerticalAlignment="Center" Height="16"/>
-        <ComboBox x:Name="cmbFormfaktor" Grid.Row="3" Grid.Column="1" SelectedIndex="0" Height="24"/>
+        <TextBlock Grid.Row="2" Text="Formfaktor:" VerticalAlignment="Top" Height="16" Grid.ColumnSpan="2" Margin="3,33,233,0" Grid.RowSpan="2"/>
+        <ComboBox x:Name="cmbFormfaktor" Grid.Row="2" Grid.Column="1" SelectedIndex="0" Height="24" Margin="3,29,-3,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
 
         <!-- Sockel -->
-        <TextBlock Grid.Row="4" Text="Sockel:" VerticalAlignment="Top" Margin="0,10,0,0" Height="16"/>
-        <ComboBox x:Name="cmbSockel" Grid.Row="4" Grid.Column="1" Margin="0,5,0,0" SelectedIndex="0" VerticalAlignment="Top" Height="25">
+        <TextBlock Grid.Row="3" Text="Sockel:" VerticalAlignment="Top" Margin="3,29,233,0" Height="16" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <ComboBox x:Name="cmbSockel" Grid.Row="3" Grid.Column="1" Margin="3,24,-3,0" SelectedIndex="0" VerticalAlignment="Top" Height="25" Grid.RowSpan="2">
         </ComboBox>
 
         <!-- Buttons -->
         <StackPanel Grid.Row="4" Orientation="Horizontal"
-                    HorizontalAlignment="Right" Margin="0,35,0,-23" Grid.Column="1" Width="218">
+                    HorizontalAlignment="Right" Margin="0,20,-3,-8" Grid.Column="1" Width="218">
             <Button Content="Speichern" Width="110" Margin="0,0,8,0" Click="OnSaveClick"/>
             <Button Content="Abbrechen" Width="100" Click="OnCancelClick"/>
         </StackPanel>
-        <TextBlock HorizontalAlignment="Left" Margin="-64,-32,0,0" TextWrapping="Wrap" Text="MainBoard -Eintragung"  FontSize="20" Foreground="#673ab7" FontWeight="Bold" VerticalAlignment="Top" Height="34" Width="358" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-68,-37,0,0" TextWrapping="Wrap" Text="MainBoard -Eintragung"  FontSize="20" Foreground="#673ab7" FontWeight="Bold" VerticalAlignment="Top" Height="34" Width="358" Grid.ColumnSpan="2"/>
     </Grid>
 </UserControl>
 

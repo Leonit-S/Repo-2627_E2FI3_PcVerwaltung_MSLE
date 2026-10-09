@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d">
+             mc:Ignorable="d" Width="501">
 
     <Grid Margin="20">
 
@@ -17,13 +17,9 @@
         </Grid.RowDefinitions>
 
         <!-- Überschrift -->
-        <TextBlock Grid.Row="0"
-                   Text="RAM"
-                   FontSize="28"
-                   FontWeight="Bold"
-                   Margin="0,0,0,20"/>
-
-        <!-- Hersteller -->
+        <TextBlock HorizontalAlignment="Left" Margin="-64,-32,0,0" TextWrapping="Wrap" Text="RAM - Eintragung"  FontSize="20" Foreground="#673ab7" FontWeight="Bold" VerticalAlignment="Top" Height="34" Width="178"/>
+    
+    <!-- Hersteller -->
         <Grid Grid.Row="1" Margin="0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PCVerwaltung"
         mc:Ignorable="d"
-        Title="HardwareView" Height="556" Width="975">
+        Title="HardwareView" Height="800" Width="1350">
     <DockPanel>
         <!-- Menü oben -->
         <Menu DockPanel.Dock="Top">

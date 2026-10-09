@@ -37,5 +37,8 @@
             <Button Content="Speichern" Width="110" Margin="0,0,8,0" Click="OnSaveClick"/>
             <Button Content="Abbrechen" Width="100" Click="OnCancelClick"/>
         </StackPanel>
+
+        <TextBlock HorizontalAlignment="Left" Margin="-64,-32,0,0" TextWrapping="Wrap" Text="Gehäuse - Eintragung"  FontSize="20" Foreground="#673ab7" FontWeight="Bold" VerticalAlignment="Top" Height="34" Width="210"/>
     </Grid>
+    
 </UserControl>
