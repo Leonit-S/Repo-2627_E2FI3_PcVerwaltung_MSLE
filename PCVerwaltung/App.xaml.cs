@@ -47,6 +47,19 @@ namespace PCVerwaltung
             new PC(Cases[4], CPUs[4], Mainboards[3]),
         };
 
+        public static List<Kunde> Customers { get; } = new()
+        {
+            new Kunde
+           {
+                Vorname = "Max",
+                Nachname = "Mustermann",
+                Strasse = "Musterstraße",
+                Hausnummer = "1",
+                PLZ = "12345",
+                Ort = "Musterstadt",
+                Email = ""
+            }
+        };
     }
 
 }

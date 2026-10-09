@@ -24,8 +24,8 @@ namespace PCVerwaltung
         public CpuView()
         {
             InitializeComponent();
-            cmbFormfaktor.ItemsSource = Enum.GetValues(typeof(Formfaktor)).Cast<Formfaktor>();
-            cmbFormfaktor.SelectedItem = Formfaktor.ATX;
+            cmbFormfaktor.ItemsSource = Enum.GetValues(typeof(SockelTyp)).Cast<SockelTyp>();
+            cmbFormfaktor.SelectedItem = SockelTyp.AM4;
         }
 
         private void OnSaveClick(object sender, RoutedEventArgs e)

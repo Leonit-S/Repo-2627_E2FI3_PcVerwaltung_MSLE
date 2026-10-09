@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="PCVerwaltung.KundenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" Width="704" Height="406">
+    <Grid x:Name="KundenGrid" Width="592" Height="369" Margin="56,0,56,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Margin="0,0,12,0">
+                <TextBlock Text="Vorname" Margin="0,4"/>
+                <TextBox x:Name="txtVorname" />
+                <TextBlock Text="Nachname" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtNachname" />
+                <TextBlock Text="Firma" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtFirma" />
+                <TextBlock Text="Telefon" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtTelefon" />
+                <TextBlock Text="E-Mail" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtEmail" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Straße" Margin="0,4"/>
+                <TextBox x:Name="txtStrasse" />
+                <TextBlock Text="Hausnummer" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtHausnummer" />
+                <TextBlock Text="PLZ" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtPLZ" />
+                <TextBlock Text="Ort" Margin="0,8,0,4"/>
+                <TextBox x:Name="txtOrt" />
+
+            </StackPanel>
+            <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,210,10,0">
+                <Button Margin="10" Content="Speichern" Width="100" Click="OnSaveClick"/>
+                <Button Content="Abbrechen" Width="100" Click="OnCancelClick"/>
+            </StackPanel>
+        </Grid>
+
+        <DataGrid Grid.Row="1" x:Name="dgCustomers" ItemsSource="{Binding Customers}" Margin="-41,12,-37,-165"
+                  AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}" Width="*"/>
+                <DataGridTextColumn Header="Nachname" Binding="{Binding Nachname}" Width="*"/>
+                <DataGridTextColumn Header="Ort" Binding="{Binding Ort}" Width="*"/>
+                <DataGridTextColumn Header="Telefon" Binding="{Binding Telefon}" Width="*"/>
+                <DataGridTextColumn Header="E-Mail" Binding="{Binding Email}" Width="2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

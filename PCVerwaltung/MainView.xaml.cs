@@ -53,6 +53,12 @@ namespace PCVerwaltung
 
         private void OnMenuAllLists(object sender, RoutedEventArgs e) => ContentHost.Content = new AllListsView();
 
+        private void OnMenuKundenEinpflegen(object sender, RoutedEventArgs e) => ContentHost.Content = new KundenView();
+
+        private void OnMenuKundenBearbeiten(object sender, RoutedEventArgs e) => ContentHost.Content = new KundenViewBearbeiten();
+
+
+
 
     }
 }

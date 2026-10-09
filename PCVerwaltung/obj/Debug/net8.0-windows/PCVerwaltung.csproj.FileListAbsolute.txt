@@ -79,3 +79,7 @@ C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerw
 C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\PCVerwaltung.pdb
 C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\PCVerwaltung.genruntimeconfig.cache
 C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\ref\PCVerwaltung.dll
+C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\KundenView.baml
+C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\KundenView.g.cs
+C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\KundenViewBearbeiten.baml
+C:\Users\Bertalan\source\repos\Leonit-S\Repo-2627_E2FI3_PcVerwaltung_MSLE\PCVerwaltung\obj\Debug\net8.0-windows\KundenViewBearbeiten.g.cs
