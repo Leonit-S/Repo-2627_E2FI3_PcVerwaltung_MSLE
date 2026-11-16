@@ -15,9 +15,10 @@ namespace PCVerwaltung.Classes
         public string Hersteller { get; set; }
         public string Modell { get; set; }
         public Formfaktor Formfaktor { get; set; }
-        public SockelTyp Sockel { get; set; }  
+        public SockelTyp Sockel { get; set; }
+        public int Punkte { get; set; } = 0;
 
-        public Mainboard(string hersteller, string modell, Formfaktor formfaktor, SockelTyp sockel)
+        public Mainboard(string hersteller, string modell, Formfaktor formfaktor, SockelTyp sockel, int punkte)
         {
             if (string.IsNullOrWhiteSpace(hersteller)) throw new Exception("Board-Hersteller ist Pflicht.");
             if (string.IsNullOrWhiteSpace(modell)) throw new Exception("Board-Modell ist Pflicht.");
@@ -27,6 +28,7 @@ namespace PCVerwaltung.Classes
             Modell = modell.Trim();
             Formfaktor = formfaktor;
             Sockel = sockel;
+            Punkte = punkte;
         }
 
         public override string ToString() => $"{Hersteller} {Modell} ({Formfaktor}, {Sockel})";

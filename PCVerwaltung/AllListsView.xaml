@@ -44,6 +44,7 @@
                         <DataGridTextColumn Header="Modell"     Binding="{Binding Modell}"     Width="2*" />
                         <DataGridTextColumn Header="Formfaktor" Binding="{Binding Formfaktor}" Width="*" />
                         <DataGridTextColumn Header="Sockel"     Binding="{Binding Sockel}"     Width="*" />
+                        <DataGridTextColumn Header="Punkte" Binding="{Binding Punkte}"  Width="*"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </TabItem>
@@ -60,12 +61,39 @@
                         <DataGridTextColumn Header="Takt (GHz)" Width="*"
                             Binding="{Binding Taktfrequenz, StringFormat={}{0:0.##}}"
                             ElementStyle="{StaticResource RightAlignStyle}"/>
+
+                        <DataGridTextColumn Header="Punkte" Binding="{Binding Punkte}"  Width="*"/>
+
                         <!-- Falls deine CPU einen Sockel hat:
                         <DataGridTextColumn Header="Sockel" Binding="{Binding Sockel}" Width="*"/>
                         -->
                     </DataGrid.Columns>
                 </DataGrid>
             </TabItem>
+
+            <!-- RAMs -->
+            <TabItem Header="RAMs">
+                <DataGrid ItemsSource="{Binding RAMs}"
+               AutoGenerateColumns="False" IsReadOnly="True"
+               CanUserAddRows="False" HeadersVisibility="Column"
+               EnableRowVirtualization="True" Margin="4">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Hersteller"       Binding="{Binding Hersteller}"        Width="2*" />
+
+                        <DataGridTextColumn Header="Kapazitaet" Width="*"
+                 Binding="{Binding Taktfrequenz, StringFormat={}{0:0.##}}"
+                 ElementStyle="{StaticResource RightAlignStyle}"/>
+                        <DataGridTextColumn Header="Taktfrequenz" Binding="{Binding Taktfrequenz}"  Width="*"/>
+                        <DataGridTextColumn Header="Preis" Binding="{Binding Preis}"  Width="*"/>
+                        <DataGridTextColumn Header="Punkte" Binding="{Binding Punkte}"  Width="*"/>
+
+                        <!-- Falls deine CPU einen Sockel hat:
+             <DataGridTextColumn Header="Sockel" Binding="{Binding Sockel}" Width="*"/>
+             -->
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+
 
             <!-- PCs (zusammengesetzte Objekte) -->
             <TabItem Header="PCs">

@@ -76,6 +76,8 @@ namespace PCVerwaltung
                 ok = false;
             }
 
+            int punkte = 0;
+
             // Bei Fehlern abbrechen
             if (!ok)
                 return;
@@ -85,7 +87,8 @@ namespace PCVerwaltung
                 txtHersteller.Text.Trim(),
                 kapazitaet,
                 taktfrequenz,
-                preis
+                preis,
+                punkte
             );
 
             // Anzeige

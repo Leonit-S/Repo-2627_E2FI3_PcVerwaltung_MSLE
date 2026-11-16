@@ -24,6 +24,7 @@ namespace PCVerwaltung.Classes
             get => $"{Hersteller} {Modell}";
             set { }
         }
+        public int Punkte { get; set; } = 0;
 
         public override string ToString() => DisplayName;
 
@@ -31,12 +32,14 @@ namespace PCVerwaltung.Classes
             string hersteller,
             int kapazitaet,
             int taktfrequenz,
-            decimal preis)
+            decimal preis,
+            int punkte)
         {
             Hersteller = hersteller;
             Kapazitaet = kapazitaet;
             Taktfrequenz = taktfrequenz;
             Preis = preis;
+            Punkte = punkte;
         }
     }
 }

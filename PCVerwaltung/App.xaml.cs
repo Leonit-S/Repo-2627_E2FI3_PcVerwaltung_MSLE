@@ -21,31 +21,31 @@ namespace PCVerwaltung
         // CPUs
         public static List<CPU> CPUs { get; } = new()
         {
-            new CPU("AMD Ryzen 7 7800X3D", 4.2),
-            new CPU("Intel Core i5-13600K", 3.5),
-            new CPU("AMD Ryzen 5 5600", 3.5),
-            new CPU("Intel Core i7-12700F", 2.1),
-            new CPU("AMD Ryzen 7 5700G", 3.8),
+            new CPU("AMD Ryzen 7 7800X3D", 4.2, 5),
+            new CPU("Intel Core i5-13600K", 3.5,4),
+            new CPU("AMD Ryzen 5 5600", 3.5,4),
+            new CPU("Intel Core i7-12700F", 2.1,1),
+            new CPU("AMD Ryzen 7 5700G", 3.8,3),
         };
 
         // Mainboards
         public static List<Mainboard> Mainboards { get; } = new()
         {
-            new Mainboard("ASUS",     "TUF GAMING B650-PLUS", Formfaktor.ATX,      SockelTyp.AM5),
-            new Mainboard("MSI",      "PRO B760M-A",          Formfaktor.MicroATX, SockelTyp.LGA1700),
-            new Mainboard("Gigabyte", "B550I AORUS PRO AX",   Formfaktor.MiniITX,  SockelTyp.AM4),
-            new Mainboard("ASRock",   "B650M Pro RS",         Formfaktor.MicroATX, SockelTyp.AM5),
-            new Mainboard("ASUS",     "ROG Strix Z690-A",     Formfaktor.ATX,      SockelTyp.LGA1700),
+            new Mainboard("ASUS",     "TUF GAMING B650-PLUS", Formfaktor.ATX,      SockelTyp.AM5, 2),
+            new Mainboard("MSI",      "PRO B760M-A",          Formfaktor.MicroATX, SockelTyp.LGA1700, 5),
+            new Mainboard("Gigabyte", "B550I AORUS PRO AX",   Formfaktor.MiniITX,  SockelTyp.AM4, 4),
+            new Mainboard("ASRock",   "B650M Pro RS",         Formfaktor.MicroATX, SockelTyp.AM5, 3),
+            new Mainboard("ASUS",     "ROG Strix Z690-A",     Formfaktor.ATX,      SockelTyp.LGA1700, 3),
         };
 
         // RAM
          public static List<Ram> RAMs { get; } = new()
          {
-         new Ram("Corsair",  16, 3200,  39.99m),
-         new Ram("Kingston",  8, 3200,  19.99m),
-         new Ram("G.Skill",  32, 3600,  74.99m),
-         new Ram("Crucial",  16, 3200,  34.99m),
-         new Ram("Corsair",  32, 5600, 109.99m)
+         new Ram("Corsair",  16, 3200,  39.99m, 3),
+         new Ram("Kingston",  8, 3200,  19.99m, 5),
+         new Ram("G.Skill",  32, 3600,  74.99m, 4),
+         new Ram("Crucial",  16, 3200,  34.99m, 5),
+         new Ram("Corsair",  32, 5600, 109.99m, 2)
          };
 
          public static List<Kunde> Customers { get; } = new()

@@ -11,11 +11,13 @@ namespace PCVerwaltung.Classes
         
         public double Taktfrequenz { get; set; } = 0.0;
         public string Modell { get; set; } = "";
+        public int Punkte { get; set; } = 0;
 
-        public CPU(string modell, double taktfrequenz)
+        public CPU(string modell, double taktfrequenz, int punkte)
         {
             Modell = modell;
             Taktfrequenz = taktfrequenz;
+            Punkte = punkte;
         }
 
         
