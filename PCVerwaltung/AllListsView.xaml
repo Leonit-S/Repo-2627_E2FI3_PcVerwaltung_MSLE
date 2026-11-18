@@ -111,6 +111,8 @@
                         <DataGridTextColumn Header="Formfaktor"   Binding="{Binding Mainboard.Formfaktor}" Width="Auto" MinWidth="90"/>
                         <DataGridTextColumn Header="Sockel"       Binding="{Binding Mainboard.Sockel}"   Width="Auto" MinWidth="75"/>
                         <DataGridTextColumn Header="Gehäuse"      Binding="{Binding Case.Modell}"        Width="2*" />
+                        <DataGridTextColumn Header="Benchmark"    Binding="{Binding Case.Modell}"        Width="2*" />
+                         <!--Muss noch angepasst werden-->
                     </DataGrid.Columns>
                 </DataGrid>
             </TabItem>
