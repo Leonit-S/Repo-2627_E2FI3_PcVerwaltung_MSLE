@@ -9,4 +9,4 @@ namespace PCVerwaltung.Classes
     class Rechnung
     {
     }
-} Erweiterung das
+}
